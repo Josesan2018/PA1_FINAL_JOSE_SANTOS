@@ -4,15 +4,11 @@
  * and open the template in the editor.
  */
 package hn.uth.pa1.aplicacion1;
-
 import hn.uth.pa1.aplicacion.humanos.FrmListaHumano;
-
 /**
- *
- * @author uth
+ ** @author uth
  */
 public class FrmMenuPrincipal extends javax.swing.JFrame {
-
     /**
      * Creates new form FrmMenuPrincipal
      */

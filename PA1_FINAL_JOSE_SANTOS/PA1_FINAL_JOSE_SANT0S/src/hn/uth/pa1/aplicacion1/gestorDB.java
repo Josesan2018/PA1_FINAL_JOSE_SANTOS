@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package hn.uth.pa1.aplicacion1;
 
 import java.sql.Connection;
@@ -11,10 +7,6 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.Statement;
 
-/**
- *
- * @author uth
- */
 public class gestorDB {
 
     /**
@@ -192,16 +184,13 @@ public class gestorDB {
         try {
             //1.- Obtener la conexion
             Connection con = getConexion();
-
             //2.- SQL de Update
             String sql = 
                     "SELECT * " +
                     "FROM UTH.PASAJEROS " +
                     "WHERE ID = ? ";
-
             //3. Preparar el query
-            PreparedStatement ps = 
-                    con.prepareStatement(sql);
+            PreparedStatement ps = con.prepareStatement(sql);
             ps.setInt(1, id);
             
             //4. Ejecutar el query
