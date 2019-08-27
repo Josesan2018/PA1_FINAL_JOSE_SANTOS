@@ -4,15 +4,13 @@
  * and open the template in the editor.
  */
 package hn.uth.pa1.logicas;
-
 import hn.uth.pa1.objetos.Humano;
 import java.util.ArrayList;
 import java.util.List;
 import javax.swing.table.DefaultTableModel;
 
 /**
- *
- * @author uth
+ * * @author uth
  */
 public class lnHumanos {
     private static List<Humano> datos=new ArrayList<>();
@@ -73,6 +71,5 @@ public class lnHumanos {
             }
         }
         return idSecuencia;
-    }
-    
+    }   
 }

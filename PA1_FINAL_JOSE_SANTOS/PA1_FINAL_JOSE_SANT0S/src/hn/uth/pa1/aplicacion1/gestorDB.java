@@ -27,7 +27,7 @@ public class gestorDB {
             String usuario = "uth";
             String contrasenia = "uth";
             String url = "jdbc:derby://localhost:1527/uth";
-
+            
             return DriverManager.getConnection(url, usuario, contrasenia);
         } catch (Exception e) {
             System.out.println("Error getConexion: " + e.toString());
@@ -59,12 +59,12 @@ public class gestorDB {
             PreparedStatement ps = con.prepareStatement(sql);
 
             //4. Asignar valores a los signos de interrogacion
-            ps.setInt(1, id);
+            ps.setInt   (1, id);
             ps.setString(2, identidad);
             ps.setString(3, nombre);
             ps.setString(4, apellido);
             ps.setDouble(5, peso);
-            ps.setInt(6, A_nacimiento);
+            ps.setInt   (6, A_nacimiento);
             ps.setDouble(7, P_equipaje);
 
             //5. Ejecutar el query
@@ -213,7 +213,6 @@ public class gestorDB {
                 System.out.print(rs.getString("NOMBRE"));
                 System.out.print(rs.getString("APELLIDO"));
             }
-            
             //6. Cerrar la conexion
             rs.close();
             ps.close();

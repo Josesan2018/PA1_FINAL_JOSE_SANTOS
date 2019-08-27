@@ -10,18 +10,13 @@ import hn.uth.pa1.objetos.Humano;
 import javax.swing.JOptionPane;
 
 /**
- *
- * @author uth
+ * * @author uth
  */
 public class FrmGestionarHumano extends javax.swing.JFrame {
-
-    /**
-     * Creates new form FrmGestionarHumano
-     */
+    /***  Creates new form FrmGestionarHumano  */
     public FrmGestionarHumano() {
         initComponents();
-        llenarInformacion();
-    }
+        llenarInformacion();}
 
     public void llenarInformacion() {
         if (svHumanos.getHumanoSeleccionado() != null) {
@@ -34,15 +29,13 @@ public class FrmGestionarHumano extends javax.swing.JFrame {
             txtPeso.setText(String.valueOf(humano.getPeso()));
             txtA_Nacimiento.setText(String.valueOf(humano.getA_nacimiento()));
             txtP_Equipaje.setText(String.valueOf(humano.getP_equipaje()));
-            
-                  
+                              
         }else{
             int id=svHumanos.getIdSecuencia();
             txtId.setText(String.valueOf(id));
             txtId.setEditable(false);
         }
     }
-
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always

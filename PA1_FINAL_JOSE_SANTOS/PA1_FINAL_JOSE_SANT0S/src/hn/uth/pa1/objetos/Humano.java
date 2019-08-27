@@ -87,8 +87,5 @@ public class Humano {
     @Override
     public String toString() {
         return "humano{" + "id=" + id + ", identidad=" + identidad + ", nombre=" + nombre + ", apellido=" + apellido + ", peso=" + peso + ", A_nacimiento=" + A_nacimiento + ", P_equipaje=" + P_equipaje + '}';
-    }
-    
-    
-    
+    }   
 }
