@@ -9,8 +9,7 @@ import hn.uth.pa1.objetos.Humano;
 import javax.swing.table.DefaultTableModel;
 import hn.uth.pa1.logicas.lnHumanos;
 /**
- *
- * @author uth
+ ** @author uth
  */
 public class svHumanos {
     
@@ -47,7 +46,11 @@ public class svHumanos {
     }
     
     public static void llenarTabla(){
-        //lnHumanos.guardar(new Humano(1, 1217199200324, "Jose", "Santos", 150.5, 1992, 25.5));
+        lnHumanos.guardar(new Humano(1, "1217199200324", "Jose", "Santos", 150.5, 1992, 25.5));
+        lnHumanos.guardar(new Humano(2, "1216199800325", "Jose", "Santos", 150.5, 1985, 25.5));
+        lnHumanos.guardar(new Humano(3, "1785199233265", "Jose", "Santos", 150.5, 1990, 25.5));
+        lnHumanos.guardar(new Humano(4, "0801919785262", "Jose", "Santos", 150.5, 1970, 25.5));
+        lnHumanos.guardar(new Humano(5, "2031466484894", "Jose", "Santos", 150.5, 1969, 25.5));
+        lnHumanos.guardar(new Humano(6, "1217192203324", "Jose", "Santos", 150.5, 1950, 25.5));
     }
-    
-}
+    }

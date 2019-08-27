@@ -174,7 +174,6 @@ public class FrmListaHumano extends javax.swing.JFrame {
     private void tblHumanosMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tblHumanosMouseClicked
         // TODO add your handling code here:
         int fila = tblHumanos.getSelectedRow();
-
         System.out.println("0: " + tblHumanos.getValueAt(fila, 0));
         System.out.println("1: " + tblHumanos.getValueAt(fila, 1));
         System.out.println("2: " + tblHumanos.getValueAt(fila, 2));
